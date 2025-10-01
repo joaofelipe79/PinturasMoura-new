@@ -1,0 +1,227 @@
+/* ====== Estilo geral ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+header {
+  background: #013220;
+  color: gold;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+header nav a {
+  color: gold;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #013220, #025930);
+  color: gold;
+}
+.hero h1 {
+  font-size: 36px;
+}
+.hero .btn {
+  background: gold;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.hero .btn:hover {
+  background: #fff;
+  color: #013220;
+}
+
+/* ====== Galeria ====== */
+.galeria {
+  padding: 50px 20px;
+  text-align: center;
+}
+.galeria h2 {
+  font-size: 28px;
+  color: #013220;
+  margin-bottom: 20px;
+  border-bottom: 3px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.galeria .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #013220;
+}
+.galeria figure {
+  text-align: center;
+}
+.galeria figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #333;
+}
+
+/* ====== Catálogo interativo ====== */
+.catalogo {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f5f5f5; /* Cor de fundo alterada para um tom de verde mais luxuoso */
+}
+.catalogo h2 {
+  font-size: 28px;
+  color: #013220;
+  margin-bottom: 20px;
+  border-bottom: 3px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.catalogo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.catalogo-items {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+.catalogo-items::-webkit-scrollbar {
+  display: none;
+}
+.catalogo .item {
+  background: #fff;
+  border: 2px solid #013220;
+  border-radius: 15px;
+  min-width: 250px;
+  max-width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+.catalogo .item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.catalogo .item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.catalogo .item h3 {
+  color: #013220;
+  margin: 10px 0;
+}
+.catalogo .item p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.catalogo button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: 2px solid #013220;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.catalogo button:first-of-type {
+  background-color: #013220;
+  color: gold;
+}
+.catalogo button:last-of-type {
+  background-color: gold;
+  color: black;
+}
+.catalogo button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.scroll-btn {
+  background: gold;
+  border: none;
+  color: black;
+  font-size: 28px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  transition: 0.3s;
+}
+.scroll-btn:hover {
+  background: #013220;
+  color: gold;
+}
+.scroll-btn.left {
+  left: -20px;
+}
+.scroll-btn.right {
+  right: -20px;
+}
+
+/* ====== Contato ====== */
+.contato {
+  padding: 50px 20px;
+  text-align: center;
+}
+.contato h2 {
+  color: #013220;
+  border-bottom: 3px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.contato .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  background: gold;
+  color: black;
+}
+.contato .btn:hover {
+  background: #013220;
+  color: gold;
+}
+
+/* ====== Rodapé ====== */
+footer {
+  background: #013220;
+  color: gold;
+  text-align: center;
+  padding: 15px;
+}
